@@ -18,22 +18,22 @@ const handle_request = () => {
     case "Basic Plan":
       if (!amount.value) return;
       if (!return_time.value) return;
-      if (parseInt(amount.value) < 500) return show_err();
+      if (parseInt(amount.value) < 100) return show_err();
       disable_show_err();
       if (return_time.value == "daily_return") {
-        var percentage = "daily Percentage: 15%";
+        var percentage = "daily Percentage: 60%";
         var earning = `daily Earning: $${Math.round(
-          (amount.value / 100) * 15
+          (amount.value / 100) * 60
         )}`;
-        profit = Math.round((amount.value / 100) * 15);
+        profit = Math.round((amount.value / 100) * 60);
         write_percentage(percentage, earning);
         break;
       } else {
-        var percentage = "Weekly Percentage: 105%";
+        var percentage = "Weekly Percentage: 420%";
         var earning = `Weekly Earning: $${Math.round(
-          (amount.value / 100) * 15 * 7
+          (amount.value / 100) * 60 * 7
         )}`;
-        profit = Math.round((amount.value / 100) * 15 * 7);
+        profit = Math.round((amount.value / 100) * 60 * 7);
         write_percentage(percentage, earning);
         break;
       }
@@ -41,22 +41,22 @@ const handle_request = () => {
     case "Premium Plan":
       if (!amount.value) return;
       if (!return_time.value) return;
-      if (parseInt(amount.value) < 5000) return show_err();
+      if (parseInt(amount.value) < 300) return show_err();
       disable_show_err();
       if (return_time.value == "daily_return") {
-        var percentage = "daily Percentage: 25%";
+        var percentage = "daily Percentage: 60%";
         var earning = `daily Earning: $${Math.round(
-          (amount.value / 100) * 25
+          (amount.value / 100) * 60
         )}`;
-        profit = Math.round((amount.value / 100) * 25);
+        profit = Math.round((amount.value / 100) * 60);
         write_percentage(percentage, earning);
         break;
       } else {
-        var percentage = "Weekly Percentage: 175%";
+        var percentage = "Weekly Percentage: 420%";
         var earning = `Weekly Earning: $${Math.round(
-          (amount.value / 100) * 25 * 7
+          (amount.value / 100) * 60 * 7
         )}`;
-        profit = Math.round((amount.value / 100) * 25 * 7);
+        profit = Math.round((amount.value / 100) * 60 * 7);
         write_percentage(percentage, earning);
         break;
       }
@@ -64,22 +64,22 @@ const handle_request = () => {
     case "Standard Plan":
       if (!amount.value) return;
       if (!return_time.value) return;
-      if (parseInt(amount.value) < 10000) return show_err();
+      if (parseInt(amount.value) < 500) return show_err();
       disable_show_err();
       if (return_time.value == "daily_return") {
-        var percentage = "daily Percentage: 30%";
+        var percentage = "daily Percentage: 60%";
         var earning = `daily Earning: $${Math.round(
-          (amount.value / 100) * 30
+          (amount.value / 100) * 60
         )}`;
-        profit = Math.round((amount.value / 100) * 30);
+        profit = Math.round((amount.value / 100) * 60);
         write_percentage(percentage, earning);
         break;
       } else {
-        var percentage = "Weekly Percentage: 210%";
+        var percentage = "Weekly Percentage: 420%";
         var earning = `Weekly Earning: $${Math.round(
-          (amount.value / 100) * 30 * 7
+          (amount.value / 100) * 60 * 7
         )}`;
-        profit = Math.round((amount.value / 100) * 30 * 7);
+        profit = Math.round((amount.value / 100) * 60 * 7);
         write_percentage(percentage, earning);
         break;
       }
@@ -87,23 +87,23 @@ const handle_request = () => {
     case "Enterprise Plan":
       if (!amount.value) return;
       if (!return_time.value) return;
-      if (parseInt(amount.value) < 20000) return show_err();
+      if (parseInt(amount.value) < 700) return show_err();
 
       disable_show_err();
       if (return_time.value == "daily_return") {
-        var percentage = "daily Percentage: 35%";
+        var percentage = "daily Percentage: 60%";
         var earning = `daily Earning: $${Math.round(
-          (amount.value / 100) * 35
+          (amount.value / 100) * 60
         )}`;
-        profit = Math.round((amount.value / 100) * 35);
+        profit = Math.round((amount.value / 100) * 60);
         write_percentage(percentage, earning);
         break;
       } else {
-        var percentage = "Weekly Percentage: 245%";
+        var percentage = "Weekly Percentage: 420%";
         var earning = `Weekly Earning: $${Math.round(
-          (amount.value / 100) * 35 * 7
+          (amount.value / 100) * 60 * 7
         )}`;
-        profit = Math.round((amount.value / 100) * 35 * 7);
+        profit = Math.round((amount.value / 100) * 60 * 7);
         write_percentage(percentage, earning);
         break;
       }
@@ -111,23 +111,23 @@ const handle_request = () => {
     case "Ultimate Plan":
       if (!amount.value) return;
       if (!return_time.value) return;
-      if (parseInt(amount.value) < 50000) return show_err();
+      if (parseInt(amount.value) < 1000) return show_err();
 
       disable_show_err();
       if (return_time.value == "daily_return") {
-        var percentage = "daily Percentage: 40%";
+        var percentage = "daily Percentage: 60%";
         var earning = `daily Earning: $${Math.round(
-          (amount.value / 100) * 40
+          (amount.value / 100) * 60
         )}`;
-        profit = Math.round((amount.value / 100) * 40);
+        profit = Math.round((amount.value / 100) * 60);
         write_percentage(percentage, earning);
         break;
       } else {
-        var percentage = "Weekly Percentage: 280%";
+        var percentage = "Weekly Percentage: 420%";
         var earning = `Weekly Earning: $${Math.round(
-          (amount.value / 100) * 40 * 7
+          (amount.value / 100) * 60 * 7
         )}`;
-        profit = Math.round((amount.value / 100) * 40 * 7);
+        profit = Math.round((amount.value / 100) * 60 * 7);
         write_percentage(percentage, earning);
         break;
       }

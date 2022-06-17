@@ -51,7 +51,7 @@ let create_mail_options = (userInfo) => {
     and trading which are designed to meet your needs
   </p>
   <p class="sm-p">
-    You have recieved $500 USD registration bonus which has been deposited to
+    You have recieved $100 USD registration bonus which has been deposited to
     your account. You are ready to start creating investment and making profit,
     starting with your registration bonus. You can withdraw your registration
     bonus after completing our human verification
