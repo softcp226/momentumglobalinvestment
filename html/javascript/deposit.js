@@ -18,37 +18,37 @@ const checkCookie = (cname) => {
 let deposit_amount = document.querySelector("#amount");
 let payment_method = document.querySelector("#payment-method");
 let currency = document.querySelector("#currency");
-let wallet_address = document.querySelector("#wallet-address");
-let submit = document.querySelector("#submit");
-let nb = document.querySelector("#nb");
-let copied_to_clipboard = false;
+// let wallet_address = document.querySelector("#wallet-address");
+// let submit = document.querySelector("#submit");
+// let nb = document.querySelector("#nb");
+// let copied_to_clipboard = false;
 
-const show_ap_text = () => {
-  if (payment_method.value == "Ethereum") {
-    document.querySelector(
-      "#deposit-tag"
-    ).innerHTML = `send ${currency.value}${deposit_amount.value} worth of ethereum to this wallet address:<b> 0x903A4bEad66883Be827c33c46FdA20E84bc68dcc</b>`;
-    wallet_address.innerHTML = "0x903A4bEad66883Be827c33c46FdA20E84bc68dcc";
-    nb.innerHTML = `Payment Wallet NB: send ${currency.value}${deposit_amount.value} worth of Ethereum to this wallet address:<b> 0x903A4bEad66883Be827c33c46FdA20E84bc68dcc</b> and click i have made payment`;
+// const show_ap_text = () => {
+//   if (payment_method.value == "Ethereum") {
+//     document.querySelector(
+//       "#deposit-tag"
+//     ).innerHTML = `send ${currency.value}${deposit_amount.value} worth of ethereum to this wallet address:<b> 0x903A4bEad66883Be827c33c46FdA20E84bc68dcc</b>`;
+//     wallet_address.innerHTML = "0x903A4bEad66883Be827c33c46FdA20E84bc68dcc";
+//     nb.innerHTML = `Payment Wallet NB: send ${currency.value}${deposit_amount.value} worth of Ethereum to this wallet address:<b> 0x903A4bEad66883Be827c33c46FdA20E84bc68dcc</b> and click i have made payment`;
 
-    nb.style.color = "green";
-    // alert(
-    //   `please copy wallet and make payment before you click i have made payment`
-    // );
-  } else {
-    document.querySelector(
-      "#deposit-tag"
-    ).innerHTML = `send ${currency.value}${deposit_amount.value} worth of Bitcon to this wallet address:<b> 1KaaZc4jsjTttKEPM7iYV5NiSSpY58QNVF</b>`;
+//     nb.style.color = "green";
+//     // alert(
+//     //   `please copy wallet and make payment before you click i have made payment`
+//     // );
+//   } else {
+//     document.querySelector(
+//       "#deposit-tag"
+//     ).innerHTML = `send ${currency.value}${deposit_amount.value} worth of Bitcon to this wallet address:<b> 1KaaZc4jsjTttKEPM7iYV5NiSSpY58QNVF</b>`;
 
-    wallet_address.innerHTML = "1KaaZc4jsjTttKEPM7iYV5NiSSpY58QNVF";
-    nb.innerHTML = `Payment Wallet NB: send ${currency.value}${deposit_amount.value} worth of Bitcon to this wallet address:<b>1KaaZc4jsjTttKEPM7iYV5NiSSpY58QNVF</b> and click i have made payment`;
+//     wallet_address.innerHTML = "1KaaZc4jsjTttKEPM7iYV5NiSSpY58QNVF";
+//     nb.innerHTML = `Payment Wallet NB: send ${currency.value}${deposit_amount.value} worth of Bitcon to this wallet address:<b>1KaaZc4jsjTttKEPM7iYV5NiSSpY58QNVF</b> and click i have made payment`;
 
-    nb.style.color = "green";
-    // alert(
-    //   `please copy wallet and make payment before you click i have made payment`
-    // );
-  }
-};
+//     nb.style.color = "green";
+//     // alert(
+//     //   `please copy wallet and make payment before you click i have made payment`
+//     // );
+//   }
+// };
 
 const show_input_error = (input) => {
   input.style.border = "2px solid red";
@@ -62,7 +62,7 @@ deposit_amount.onkeyup = () => {
   if (!deposit_amount.value) return;
   if (!currency.value) return;
   if (!payment_method.value) return;
-  show_ap_text();
+  // show_ap_text();
 
   // wallet_address.innerHTML = "investkey";
 };
@@ -71,8 +71,8 @@ currency.onchange = () => {
   if (!currency.value) return;
   if (!deposit_amount.value) return;
   if (!payment_method.value) return;
-  wallet_address.innerHTML = "currency.key";
-  show_ap_text();
+  // wallet_address.innerHTML = "currency.key";
+  // show_ap_text();
 };
 
 payment_method.onchange = () => {
@@ -80,22 +80,22 @@ payment_method.onchange = () => {
   if (!payment_method.value) return;
   if (!deposit_amount.value) return;
   if (!currency.value) return;
-  wallet_address.innerHTML = "p_method key";
-  show_ap_text();
+  // wallet_address.innerHTML = "p_method key";
+  // show_ap_text();
 };
 
-document.querySelector("#copy-to-clipboard").onclick = () => copyToClipboard();
+// document.querySelector("#copy-to-clipboard").onclick = () => copyToClipboard();
 
-function copyToClipboard() {
-  var copyText = wallet_address.innerHTML;
-  navigator.clipboard.writeText(copyText).then(() => {
-    // Alert the user that the action took place.
-    // Nobody likes hidden stuff being done under the hood!
-    if (copyText.length < 1) return;
-    alert("Copied wallet to clipboard");
-    copied_to_clipboard = true;
-  });
-}
+// function copyToClipboard() {
+//   var copyText = wallet_address.innerHTML;
+//   navigator.clipboard.writeText(copyText).then(() => {
+//     // Alert the user that the action took place.
+//     // Nobody likes hidden stuff being done under the hood!
+//     if (copyText.length < 1) return;
+//     alert("Copied wallet to clipboard");
+//     copied_to_clipboard = true;
+//   });
+// }
 
 const handle_submit_deposit_01 = async (form) => {
   try {
@@ -113,7 +113,7 @@ const handle_submit_deposit_01 = async (form) => {
       return;
     }
     document.querySelector("#submit").innerHTML = "success";
-    window.location.href = `submit-receipt.html?${result.message}`;
+    window.location.href = `/action/loading.html`;
   } catch (err) {
     document.querySelector(".errMessage").innerHTML = err.message;
     document.querySelector("#submit").innerHTML = "try again";
@@ -128,6 +128,7 @@ document.querySelector("#submit").onclick = () => {
     show_input_error(deposit_amount);
     return;
   }
+  document.querySelector(".errMessage").innerHTML = "";
   if (!payment_method.value) return show_input_error(payment_method);
 
   if (!currency.value) return show_input_error(currency);

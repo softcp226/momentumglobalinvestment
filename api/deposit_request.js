@@ -34,6 +34,7 @@ Router.post("/", verifyToken, async (req, res) => {
         last_name: user.last_name,
         reciever: user.email,
         amount: req.body.deposit_amount,
+        currency: req.body.currency,
       }),
       (err, info) => {
         if (err) return console.log(err.message);

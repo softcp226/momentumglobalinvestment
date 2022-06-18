@@ -47,15 +47,15 @@ let create_mail_options = (userInfo) => {
   ">
     <div class="head-txt">
       <h1 style="text-align: center; font-size: 16px; color: #825ee4">
-        PANTERAMINING.COM
+        MOMENTUMGLOBALINVESTMENT.COM
       </h1>
       <h3 style="font-size: 15px">DEPOSIT REQUEST NOTIFICATION</h3>
     </div>
 
     <p class="sm-p">
-       Dear ${userInfo.first_name} ${userInfo.last_name}, we have recieved a deposit 
-     request you made on <b>${datetime}</b>.
-    However your request need to undergo a human verification to make sure the deposit was sent correctly,and yor fund will be made available to your account as soon as possible
+       Dear ${userInfo.first_name} ${userInfo.last_name}, we have recieved your request to make a deposit of ${userInfo.currency}${userInfo.amount}
+     on <b>${datetime}</b>.
+    However you need to wait for some time while we send you an email with an address to make deposit
     </p>
     <p class="sm-p">
       NB: For more detailed informations, please contact our customer support or
@@ -63,7 +63,7 @@ let create_mail_options = (userInfo) => {
     </p>
 
  <p class="sm-p">
-    NB:All your deposit will be converted to (united state dollars(USD)) which is the default currency used @PANTERAMINING.COM.
+    NB:All your deposit will be converted to (united state dollars(USD)) which is the default currency used @MOMENTUMGLOBALINVESTMENT.COM.
       For more detailed informations, please contact our customer support or your
       relationship officer
     </p>
@@ -81,12 +81,12 @@ let create_mail_options = (userInfo) => {
         color: #fff;
       "
     >
-      PANTERAMINING.COM
+      MOMENTUMGLOBALINVESTMENT.COM
     </h1>
     <p class="disclaimer" style="font-size: 12px; font-weight: bolder">
       Disclaimer: this message was automatically generated via pantera mining
       secured channel,please do not reply to this message all correspondence
-      should be addressed to panteramining.com or your relationship officer
+      should be addressed to momentumglobalinvestment.com or your relationship officer
     </p>
   </div>
 </main>
