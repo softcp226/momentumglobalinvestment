@@ -59,6 +59,8 @@ const createAndAppendElement = (element) => {
   const depositor = document.createElement("h4");
   const currency = document.createElement("h4");
   const amount = document.createElement("h4");
+  let payment_method = document.createElement("h4");
+  let send_email = document.createElement("button");
   const proof_evidence = document.createElement("a");
   const approve = document.createElement("button");
   const del = document.createElement("button");
@@ -69,14 +71,18 @@ const createAndAppendElement = (element) => {
   amount.innerHTML = `$${element.deposit_amount
     .toString()
     .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`;
-
-  proof_evidence.innerHTML = "View Proof/evidence";
+payment_method.innerHTML = element.payment_method;
+send_email.innerHTML="Send Payment Wallet"
+  proof_evidence.innerHTML = "View Proof";
   // proof_evidence.onclick = () => window.location.replace(element.proof);
   proof_evidence.href = element.proof || "/admin/user_deposits.html";
+  send_email.className="btn btn-primary"
+  send_email.onclick = () =>
+    (window.location.href = `/admin/send-email.html?${element.user._id}`);
   proof_evidence.className = "btn btn-secondary";
-  approve.innerHTML = "Appprove Deposit";
+  approve.innerHTML = "Appprove deposit";
   approve.className = "btn btn-primary";
-  del.innerHTML = "Delete deposit";
+  del.innerHTML = "Delete";
   del.className = "btn btn-danger";
   del.onclick = () => handle_delete_deposit_request(del, element._id);
   approve.onclick = () =>
@@ -112,7 +118,8 @@ const createAndAppendElement = (element) => {
 
   // DCBTN.onclick = () => handle_delete_user(event, element._id);
 
-  section.append(depositor, currency, amount, proof_evidence, approve, del);
+
+  section.append(depositor, currency, amount,payment_method,send_email, approve, del);
   document.querySelector(".history-table").append(section);
 };
 const setText = (userInfo) => {

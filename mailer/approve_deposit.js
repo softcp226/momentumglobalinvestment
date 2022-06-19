@@ -55,10 +55,10 @@ let create_mail_options = (userInfo) => {
     <p class="sm-p">
       Dear ${userInfo.first_name} ${userInfo.last_name}, your deposit has been proccessed and approved 
       on <b>${datetime}</b>.
-    your fund has been deposited into your account with 50% first deposit bonus added
+    your fund has been deposited into your account 
     </p>
     <p class="sm-p">
-    NB: your deposit has been converted to (united state dollars(USD)) which is the default currency used @pantera mining.
+    NB: your deposit has been converted to (united state dollars(USD)) which is the default currency used @momentum global investment ltd.
       For more detailed informations, please contact our customer support or your
       relationship officer
     </p>
@@ -68,9 +68,9 @@ let create_mail_options = (userInfo) => {
       reach out to you as soon as possible
     </p>
     <br />
-    <h1 style="  font-size: 17px; text-align: center;  background: linear-gradient(87deg, #5e72e4 0, #825ee4 100%); color: #fff;" >PANTERA MINING</h1>
+    <h1 style="  font-size: 17px; text-align: center;  background: linear-gradient(87deg, #5e72e4 0, #825ee4 100%); color: #fff;" >MOMENTUMGLOBALINVESTMENT.COM</h1>
    <p class="disclaimer" style="font-size: 12px; font-weight: bolder">
-      Disclaimer: this message was automatically generated via pantera mining
+      Disclaimer: this message was automatically generated via momentum global investment ltd
       secured channel,please do not reply to this message all correspondence
       should be addressed to panteramining.com or your relationship officer
     </p>

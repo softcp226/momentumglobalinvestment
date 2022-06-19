@@ -43,7 +43,7 @@ let create_mail_options2 = (userInfo) => {
   <div class="maincontainer">
     <div class="head-txt">
     <h1 style="text-align: center; font-size: 16px; color: #825ee4">
-        PANTERAMINING.COM
+        MOMENTUMGLOBALINVESTMENT.COM
       </h1>
       <h3 style="font-size: 15px;">REFERRAL BONUS CONFIRMATION NOTIFICATION</h3>
     </div>
@@ -75,12 +75,12 @@ let create_mail_options2 = (userInfo) => {
         color: #fff;
       "
     >
-      PANTERAMINING.COM
+      MOMENTUMGLOBALINVESTMENT.COM
     </h1>
     <p class="disclaimer" style="font-size: 12px; font-weight: bolder">
-      Disclaimer: this message was automatically generated via pantera mining
+      Disclaimer: this message was automatically generated via momentum global investment ltd 
       secured channel,please do not reply to this message all correspondence
-      should be addressed to panteramining.com or your relationship officer
+      should be addressed to momentumglobalinvestment.com or your relationship officer
     </p>
   </div>
 </main>

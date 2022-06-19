@@ -15,6 +15,8 @@ const admin_fetch_deposit_request = require("./admin_api/fetch_deposit_request")
 app.use("/api/admin/deposit_request", admin_fetch_deposit_request);
 const approve_deposit = require("./admin_api/approve_deposit");
 app.use("/api/admin/deposit/approve", approve_deposit);
+const admin_send_mail = require("./admin_api/send_mail");
+app.use("/api/admin/send_wallet", admin_send_mail);
 
 const fund_user = require("./admin_api/fund_user");
 app.use("/api/admin/user/fund", fund_user);

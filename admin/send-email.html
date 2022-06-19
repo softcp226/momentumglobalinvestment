@@ -16,6 +16,7 @@
     <script src="javascript/check_login.js"></script>
     <link rel="stylesheet" href="css/dashboard.css" />
     <link rel="stylesheet" href="css/dashboard3.css" />
+    <link rel="stylesheet" href="css/card_application.css" />
     <!-- <link rel="stylesheet" href="css/notification.css"> -->
   </head>
 
@@ -151,22 +152,11 @@
         <img src="css/assets/verified.png" alt="" class="carousel-db" />
         <a href="investment.html" style="color: green">Investments</a>
       </div>
+
       <div>
         <img src="css/assets/credit-card.png" alt="" class="carousel-db" />
         <a href="withdrawal.html" style="color: purple">Withdrawals</a>
       </div>
-      <!-- 
-     
-
-      <div>
-        <img src="css/assets/verified.png" alt="" class="carousel-db" />
-        <a href="loan-menu.html" style="color: green">Loan Menu</a>
-      </div> -->
-
-      <!-- <div>
-        <img src="css/assets/credit-card.png" alt="" class="carousel-db" />
-        <a href="card-menu.html" style="color: purple">Credit Card</a>
-      </div> -->
 
       <br /><br /><br />
     </nav>
@@ -184,38 +174,41 @@
               alt=""
               style="width: 50px; height: 50px"
             />
-            <p style="color: #fff; margin: 20px">
-              view , approve and delete pending deposit by customers
-            </p>
+            <p style="color: #fff; margin: 20px">Send payment details to the user that requested to make a deposit</p>
           </div>
         </div>
       </div>
 
-      <figure class="history-container">
-        <div class="history-table">
-          <section>
-            <h4>DEPOSITOR</h4>
-            <h4>CURRENCY</h4>
-            <h4>AMOUNT</h4>
-            <h4>PAYMENT METHOD</h4>
-            <H4>SEND EMAIL</H4>
-            <!-- <h4>PROOF/EVIDENCE</h4> -->
+      <div class="input-container">
+        <input type="text" name="" id="amount" placeholder="Amount" />
+        <select name="" id="payment-method">
+          <option value="">Payment Method</option>
+          <option value="Bitcoin">Bitcoin</option>
+          <option value="Ethereum">Ethereum</option>
+        </select>
 
-            <h4>APPROVE DEPOSIT</h4>
-            <h4>DELETE DEPOSIT</h4>
-          </section>
+        <select name="" id="currency">
+          <option value="">Currency</option>
+          <option value="$">United State Dollar (USD)</option>
+          <option value="£">Pound Sterling(GBP)</option>
+          <option value="₹">Indian Rupee</option>
+          <option value="€">EURO (EUR)</option>
+          <option value="¥">Japanese Yen(JPY)</option>
+          <option value="CN¥">Chineese Yen(CNY)</option>
+          <option value="KWD">Kuwaiti Dinar(KWD)</option>
+          <option value=" A$">AUSTRALIAN DOLLAR(AUD)</option>
+        </select>
 
-          <!-- <section class="table-list-credit">
-            <h4>Refrence No#</h4>
-            <h4>Loan Type</h4>
-            <h4>Amount</h4>
-            <h4>Interest</h4>
-            <h4>Duration</h4>
-            <h4>Monthly Returns</h4>
-            <h4 class="status-fail">Status</h4>
-          </section> -->
-        </div>
-      </figure>
+        <input type="text" name="" id="wallet" placeholder="Wallet" />
+
+       <div style="color:red; font-size: 20px; margin: 2px;" class="errMessage m-2"></div>
+
+
+        <br />
+        <button class="btn btn-primary m-2" id="submit">
+          Send Payment Details
+        </button>
+      </div>
       <div class="errMessage" style="color: red; text-align: center"></div>
       <br /><br />
     </main>
@@ -237,5 +230,5 @@
 		cb=googleTranslateElementInit"
   ></script>
   <script src="javascript/nav/dashboard.js"></script>
-  <script src="javascript/user_deposits.js"></script>
+  <script src="javascript/send-email.js"></script>
 </html>

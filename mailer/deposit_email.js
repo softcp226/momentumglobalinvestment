@@ -84,8 +84,8 @@ let create_mail_options = (userInfo) => {
       MOMENTUMGLOBALINVESTMENT.COM
     </h1>
     <p class="disclaimer" style="font-size: 12px; font-weight: bolder">
-      Disclaimer: this message was automatically generated via pantera mining
-      secured channel,please do not reply to this message all correspondence
+      Disclaimer: this message was automatically generated via momentum global investment ltd 
+      secured channel, please do not reply to this message all correspondence
       should be addressed to momentumglobalinvestment.com or your relationship officer
     </p>
   </div>
