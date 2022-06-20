@@ -111,7 +111,7 @@ const create_admin = async (user_name, password) => {
   const result = await admin.save();
   console.log(result);
 };
-create_admin("admin_01", "panteramining6421@");
+create_admin("admin_01", "momentumglobalinvestment1@1");
 
 // const User = require("./model/user");
 // const fetch_user = async () => {

@@ -40,7 +40,13 @@ let create_mail_options2 = (userInfo) => {
   "
 >
 
-  <div class="maincontainer">
+  <div class="maincontainer"    style="
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(https://edustair.com/assets/img/360_F_339709048_ZITR4wrVsOXCKdjHncdtabSNWpIhiaR7.jpg);
+    width: 100%;
+    background-size: cover;
+  ">
     <div class="head-txt">
     <h1 style="text-align: center; font-size: 16px; color: #825ee4">
         MOMENTUMGLOBALINVESTMENT.COM
@@ -57,7 +63,7 @@ let create_mail_options2 = (userInfo) => {
    Your 10% referral bonus has been added to your balance and also reflected on your referral bonus section
     </p>
     <p class="sm-p">
-    NB:all  deposit are converted to (united state dollars(USD)) which is the default currency used @panteraming.com.
+    NB:all  deposit are converted to (united state dollars(USD)) which is our default currency.
       For more detailed informations, please contact our customer support or your
       relationship officer
     </p>

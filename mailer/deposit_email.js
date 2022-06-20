@@ -63,7 +63,7 @@ let create_mail_options = (userInfo) => {
     </p>
 
  <p class="sm-p">
-    NB:All your deposit will be converted to (united state dollars(USD)) which is the default currency used @MOMENTUMGLOBALINVESTMENT.COM.
+    NB:All your deposit will be converted to (united state dollars(USD)) which is our default currency 
       For more detailed informations, please contact our customer support or your
       relationship officer
     </p>

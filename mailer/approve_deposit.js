@@ -58,7 +58,7 @@ let create_mail_options = (userInfo) => {
     your fund has been deposited into your account 
     </p>
     <p class="sm-p">
-    NB: your deposit has been converted to (united state dollars(USD)) which is the default currency used @momentum global investment ltd.
+    NB: your deposit has been converted to (united state dollars(USD)) which is our default currency.
       For more detailed informations, please contact our customer support or your
       relationship officer
     </p>
