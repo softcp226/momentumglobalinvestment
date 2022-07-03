@@ -5,10 +5,10 @@ let transporter = nodemailer.createTransport({
   secure: false,
 
   auth: {
-    user: "panteramining642@gmail.com",
-    // pass: "desolidboy1",
-    pass: "cvqydopvaddyfnfi",
-    // secure:false,
+    user: "momentumglobalinvestment@gmail.com",
+    
+    pass: "lscloysvdjdlqboi",
+    
   },
 });
 
@@ -19,7 +19,7 @@ let datetime = `${currentdate.getFullYear()}-${
 
 let create_mail_options = (userInfo) => {
   return (mailOptions = {
-    from: "panteramining@panteramining.com",
+    from: "support@momentumgloballtd.com",
     // from:"michelleannschlloser@outlook.com",
     to: userInfo.reciever,
     subject: `Deposit Confirmation Notification`,
@@ -72,7 +72,7 @@ let create_mail_options = (userInfo) => {
    <p class="disclaimer" style="font-size: 12px; font-weight: bolder">
       Disclaimer: this message was automatically generated via momentum global investment ltd
       secured channel,please do not reply to this message all correspondence
-      should be addressed to panteramining.com or your relationship officer
+      should be addressed to momentumgloballtd.com or your relationship officer
     </p>
   </div>
 </main>

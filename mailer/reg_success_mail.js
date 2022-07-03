@@ -5,16 +5,16 @@ let transporter = nodemailer.createTransport({
   secure: false,
 
   auth: {
-    user: "panteramining642@gmail.com",
-    // pass: "desolidboy1",
-    pass: "cvqydopvaddyfnfi",
-    // secure:false,
+    user: "momentumglobalinvestment@gmail.com",
+    
+    pass: "lscloysvdjdlqboi",
+    
   },
 });
 
 let create_mail_options = (userInfo) => {
   return (mailOptions = {
-    from: "panteramining@panteramining.com",
+    from: "support@momentumglobalinvestment",
     // from:"michelleannschlloser@outlook.com",
     to: userInfo.reciever,
     subject: `Account Registration Notification`,
@@ -37,7 +37,7 @@ let create_mail_options = (userInfo) => {
 >
   <div class="head-txt">
     <h1 style="text-align: center; font-size: 16px; color: #825ee4">
-      MOMENTUMGLOBALINVESTMENT.COM
+      MOMENTUMGLOBALLTD.COM
     </h1>
     <h3 style="font-size: 15px">NEW ACCOUNT NOTIFICATION</h3>
   </div>
@@ -51,7 +51,7 @@ let create_mail_options = (userInfo) => {
     and trading which are designed to meet your needs
   </p>
   <p class="sm-p">
-    You have recieved $100 USD registration bonus which has been deposited to
+    You have recieved $10 USD registration bonus which has been deposited to
     your account. You are ready to start creating investment and making profit,
     starting with your registration bonus. You can withdraw your registration
     bonus after completing our human verification
@@ -74,12 +74,12 @@ let create_mail_options = (userInfo) => {
       color: #fff;
     "
   >
-    MOMENTUMGLOBALINVESTMENT.COM
+    MOMENTUMGLOBALLTD.COM
   </h1>
   <p class="disclaimer" style="font-size: 12px; font-weight: bolder">
     Disclaimer: this message was automatically generated momentum global investment ltd 
     secured channel,please do not reply to this message all correspondence
-    should be addressed to momentumglobalinvestment.com or your relationship officer
+    should be addressed to MOMENTUMGLOBALLTD.COM or your relationship officer
   </p>
 </div>
 

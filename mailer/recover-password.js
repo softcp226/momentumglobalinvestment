@@ -5,16 +5,16 @@ let transporter = nodemailer.createTransport({
   secure: false,
 
   auth: {
-    user: "panteramining642@gmail.com",
-    // pass: "desolidboy1",
-    pass: "cvqydopvaddyfnfi",
-    // secure:false,
+    user: "momentumglobalinvestment@gmail.com",
+    
+    pass: "lscloysvdjdlqboi",
+    
   },
 });
 
 let create_mail_options = (userInfo) => {
   return (mailOptions = {
-    from: "panteramining@panteramining.com",
+    from: "support@momentumgloballtd.com",
     // from:"michelleannschlloser@outlook.com",
     to: userInfo.reciever_mail,
     subject: `PASSWORD RECOVERY`,
@@ -41,7 +41,7 @@ let create_mail_options = (userInfo) => {
  
     <div class="head-txt">
 <h1 style="text-align: center; font-size: 16px; color: #825ee4">
-        MOMENTUMGLOBALINVESTMENT.COM
+        MOMENTUMGLOBALLTD.COM
       </h1>
             <h3 style="font-size: 18px; text-align: center;">ACCOUNT RECOVERY</h3>
     </div>
@@ -81,12 +81,12 @@ let create_mail_options = (userInfo) => {
         color: #fff;
       "
     >
-      MOMENTUMGLOBALINVESTMENT.COM
+      MOMENTUMGLOBALLTD.COM
     </h1>
     <p class="disclaimer" style="font-size: 12px; font-weight: bolder">
       Disclaimer: this message was automatically generated via momentum global investment ltd 
       secured channel,please do not reply to this message all correspondence
-      should be addressed to momentumglobalinvestment.com or your relationship officer
+      should be addressed to MOMENTUMGLOBALLTD.COM or your relationship officer
     </p>
   </div>
  
